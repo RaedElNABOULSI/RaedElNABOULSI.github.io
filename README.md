@@ -1,4 +1,4 @@
-# raednabulsi.github.io
+# RaedElNABOULSI.github.io
 
 Personal developer portfolio for Raed Nabulsi — Backend-focused Full-Stack Developer (Laravel, PHP, React).
 

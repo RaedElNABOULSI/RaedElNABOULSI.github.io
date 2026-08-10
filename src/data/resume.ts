@@ -22,8 +22,7 @@ export const profile: Profile = {
   email: "raedelnaboulsi@gmail.com",
   phone: "+961 70 514 137",
   linkedin: "https://linkedin.com/in/raedelnaboulsi",
-  // TODO(Raed): confirm this is your GitHub username/profile URL.
-  github: "https://github.com/raednabulsi",
+  github: "https://github.com/RaedElNABOULSI",
   resumeUrl: "/Raed_Nabulsi_Resume.pdf",
   positioning:
     "I design and ship scalable Laravel APIs and backend systems — from database architecture to production performance.",
