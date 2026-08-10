@@ -1,0 +1,12 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--bg-elevated-2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  white-space: nowrap;
+}

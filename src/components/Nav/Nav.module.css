@@ -1,0 +1,92 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  background: rgba(10, 11, 15, 0.72);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.links {
+  display: none;
+  align-items: center;
+  gap: 28px;
+}
+
+.links a {
+  font-size: 14px;
+  color: var(--text-dim);
+  transition: color 0.15s ease;
+}
+
+.links a:hover {
+  color: var(--text);
+}
+
+.cta {
+  display: none;
+}
+
+.resumeBtn {
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.resumeBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.menuBtn {
+  display: inline-flex;
+  background: none;
+  border: none;
+  color: var(--text);
+  padding: 8px;
+}
+
+.mobilePanel {
+  border-top: 1px solid var(--border-soft);
+  padding: 16px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobilePanel a {
+  font-size: 15px;
+  color: var(--text-dim);
+}
+
+@media (min-width: 860px) {
+  .links,
+  .cta {
+    display: flex;
+  }
+  .menuBtn {
+    display: none;
+  }
+}

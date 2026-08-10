@@ -1,0 +1,39 @@
+.section {
+  padding-block: 96px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.header {
+  margin-bottom: 48px;
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.subtitle {
+  margin-top: 12px;
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-block: 64px;
+  }
+}

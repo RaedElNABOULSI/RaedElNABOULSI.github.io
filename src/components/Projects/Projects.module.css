@@ -1,0 +1,103 @@
+.featured {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--bg-elevated), var(--bg-elevated-2));
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(255, 107, 87, 0.3);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.headRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-dim);
+  margin-top: 6px;
+  margin-bottom: 24px;
+  max-width: 560px;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.pointsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.point {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+.pointIcon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.linkNote {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 13.5px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 800px) {
+  .featured {
+    padding: 28px;
+  }
+  .pointsGrid {
+    grid-template-columns: 1fr;
+  }
+}
