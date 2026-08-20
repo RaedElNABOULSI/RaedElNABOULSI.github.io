@@ -28,11 +28,11 @@ export default function Nav() {
           ))}
         </nav>
 
-        <div className={styles.cta}>
+        {/* <div className={styles.cta}>
           <a className={styles.resumeBtn} href={profile.resumeUrl} target="_blank" rel="noreferrer">
             Resume
           </a>
-        </div>
+        </div> */}
 
         <button
           className={styles.menuBtn}

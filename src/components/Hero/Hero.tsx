@@ -36,9 +36,9 @@ export default function Hero() {
 
         <Reveal delay={200}>
           <div className={styles.ctaRow}>
-            <a className={styles.primaryBtn} href={profile.resumeUrl} target="_blank" rel="noreferrer">
+            {/* <a className={styles.primaryBtn} href={profile.resumeUrl} target="_blank" rel="noreferrer">
               Download Resume
-            </a>
+            </a> */}
             <a className={styles.secondaryBtn} href="#projects">
               View Projects
             </a>

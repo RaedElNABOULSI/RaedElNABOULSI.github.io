@@ -21,9 +21,9 @@ export default function Contact() {
             <a className={styles.secondary} href={profile.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
-            <a className={styles.secondary} href={profile.resumeUrl} target="_blank" rel="noreferrer">
+            {/* <a className={styles.secondary} href={profile.resumeUrl} target="_blank" rel="noreferrer">
               Resume (PDF)
-            </a>
+            </a> */}
           </div>
         </div>
       </Reveal>
