@@ -147,6 +147,19 @@ export const projects: ProjectItem[] = [
       "Generated 7+ exportable PDF reports and a real-time KPI dashboard; containerized and deployed with Docker to a managed MySQL backend",
     ],
   },
+  {
+    id: "inner-peace",
+    name: "Inner Peace",
+    subtitle: "Bilingual Mental-Wellness Platform with AI-Guided Support",
+    tech: ["React", "Vite", "Tailwind CSS v4", "Netlify Functions", "Google Gemini"],
+    link: "https://innerpeace-guide.netlify.app/",
+    points: [
+      "Built a bilingual (English/Arabic, full RTL) AI-guided check-in flow: 15+ common situations resolve instantly from pre-written responses, while free-text input routes to a rate-limited Gemini serverless function under a safety-constrained system prompt (no diagnosis, automatic escalation on urgent language)",
+      "Designed 6 interactive self-help tools — breathing exercise, mood tracker, calming audio player, and two original canvas-based tools — with WCAG-conscious accessibility and full prefers-reduced-motion support",
+      "Implemented a privacy-first architecture with all check-in and mood history stored client-side only (localStorage), including local pattern detection that nudges users toward professional support on recurring concerns",
+      "Hardened production security (CSP, HSTS, Permissions-Policy) verified against the live deployment, and added Open Graph/JSON-LD metadata calibrated to avoid overstating the site's clinical authority",
+    ],
+  },
 ];
 
 export const contact = {
