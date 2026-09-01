@@ -160,6 +160,20 @@ export const projects: ProjectItem[] = [
       "Hardened production security (CSP, HSTS, Permissions-Policy) verified against the live deployment, and added Open Graph/JSON-LD metadata calibrated to avoid overstating the site's clinical authority",
     ],
   },
+  {
+    id: "form-pilot",
+    name: "Form Pilot",
+    subtitle: "AI Agent That Turns Natural-Language Descriptions into Real Google Forms",
+    tech: ["Python", "FastAPI", "Pydantic", "Gemini API", "Google Forms API", "OAuth 2.0", "Playwright"],
+    linkNote: "Live demo / repo link to be added",
+    points: [
+      "Architected a multi-step LLM agent, not a single-prompt wrapper — separate clarification, design, edit, and quality-check stages, each with its own Pydantic schema; every model response is validated and automatically retried on schema failure before it's used",
+      "Enforced hard business rules in code rather than the prompt (e.g. a max-2-clarification-round cap) after testing showed the model would otherwise ignore prompt-only constraints",
+      "Built a live, editable form preview — retitle, retype, reorder, duplicate, or delete any question via chat or by hand — with undo/redo spanning both manual and AI-driven edits",
+      "Shipped multilingual generation (English/Arabic/French) with automatic RTL layout and selectable tone, plus an AI quality-check panel with clarity scoring and one-click fixes",
+      "Integrated real Google Forms creation via OAuth 2.0 and the Forms API v1 (not a mockup); verified the full chat/edit/undo/create flow end-to-end with automated Playwright browser tests, which caught a mobile CSS overflow bug that was fixed and re-verified",
+    ],
+  },
 ];
 
 export const contact = {
