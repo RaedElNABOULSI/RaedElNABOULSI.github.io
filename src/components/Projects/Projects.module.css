@@ -93,6 +93,21 @@
   font-family: var(--font-mono);
 }
 
+.link {
+  display: inline-flex;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: var(--font-mono);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .featured {
     padding: 28px;

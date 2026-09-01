@@ -40,7 +40,13 @@ export default function Projects() {
                 ))}
               </div>
 
-              {project.linkNote && <div className={styles.linkNote}>// {project.linkNote}</div>}
+              {project.link ? (
+                <a className={styles.link} href={project.link} target="_blank" rel="noreferrer">
+                  Live site →
+                </a>
+              ) : (
+                project.linkNote && <div className={styles.linkNote}>// {project.linkNote}</div>
+              )}
             </article>
           </Reveal>
         ))}
